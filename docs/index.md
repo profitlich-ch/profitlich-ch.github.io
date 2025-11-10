@@ -15,11 +15,20 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
+  - title: A Unternehmen
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+    link: /unternehmen
+  - title: B Mitarbeiter
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+    link: /mitarbeiter
+  - title: C Kunden
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /kunden
+  - title: D Unterstützung
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /unterstützung
+  - title: E Archiv
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /archiv
 ---
 
