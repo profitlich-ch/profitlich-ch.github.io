@@ -10,6 +10,12 @@ hero:
     - theme: brand
       text: Zeiterfassung und Projektverwaltung
       link: https://profitlich.prosonata.software/
+    - theme: brand
+      text: Github Laufendes
+      link: https://github.com/orgs/profitlich-ch/projects/5/views/2
+    - theme: alt
+      text: Github Projekte
+      link: https://github.com/orgs/profitlich-ch/projects
     - theme: alt
       text: Repositories
       link: https://github.com/orgs/profitlich-ch/repositories
@@ -25,16 +31,16 @@ features:
     details: Arbeitsweisen, Coding Guidelines
     link: /unternehmen
   - title: B Mitarbeiter
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 
     link: /mitarbeiter
   - title: C Kunden
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Kundenprojekte
     link: /kunden
   - title: D Unterstützung
     details: EDV, Bibliothek, Vorlagen
     link: /unterstützung
   - title: E Archiv
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Vorgehen bei der Archivierung von Daten
     link: /archiv
 ---
 
