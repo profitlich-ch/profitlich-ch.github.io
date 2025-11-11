@@ -1,5 +1,9 @@
 # Craft CMS
 
+::: info Vorlage
+https://github.com/profitlich-ch/template-craftcms/
+:::
+
 ## Projekt aufsetzen
 
 1. Github repository auf Basis der Vorlage anlegen, mit Name `domain.tld`
