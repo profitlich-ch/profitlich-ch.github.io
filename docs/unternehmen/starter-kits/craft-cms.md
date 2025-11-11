@@ -99,7 +99,7 @@ Häufigkeit `5****`
 Updates werden nur lokal (Umgebung development) durchgeführt. Die Datei `composer.json`muss für Updates gemäss SemVer vorbereitet sein: Versionen brauchen eine Erlaubnis zum Update mit `^3.5.2` statt `3.5.2` (^ minor updates, ~ patch update).  
 https://nystudio107.com/blog/updating-craft-cms-without-headaches
 
-``` SH
+```console
 ddev ssh
 composer self-update
 composer update
@@ -129,7 +129,7 @@ Der package-name steht in Github und auch in der composer.json
 
 Dieser Fehler ist bisher direkt nach Aufsetzen eines neuen Projekts aufgetreten, wenn ein Feld vom Typ CKEditor angelegt wird. Die Deinstallation des Plugins hilft nicht. Stattdessen muss die [Datenbank neu erzeugt](https://stackoverflow.com/questions/76266496/ddev-is-there-a-command-to-re-create-an-empty-database) werden:
 
-``` SH
+```console
 ddev delete --omit-snapshot
 ddev start
 ddev ssh
@@ -142,7 +142,7 @@ Um Testen (`p`, `h1`, `h2`, …) eine Klasse zu geben, braucht es folgenden Code
 
 `class` gibt dem Button im CKEditor eine Class, um den Button gestalten zu können. `view.classes` sind die Klassen, die dem Text zugewiesen werden (bereits im CKEditor und vor allem im Frontend).
 
-````js
+```js
 return {
   heading: {
     options: [
@@ -190,4 +190,4 @@ return {
     ],
   },
 }
-````
+```

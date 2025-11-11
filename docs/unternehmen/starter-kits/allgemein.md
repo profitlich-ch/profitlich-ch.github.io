@@ -54,24 +54,24 @@ Manche Hoster geben ein Präfix vor, manche erlauben nur kurze Namen. Vom unten 
 #### Hostpoint
 
 https://support.hostpoint.ch/de/produkte/webhosting/haeufig-gestellte-fragen/pfade-verzeichnisse-system 
-````
+```
 alias php='/usr/local/php81/bin/php' 
 echo "alias php='/usr/local/php81/bin/php'" >> ~/.bash_profile
 
 export PATH=/usr/local/php81/bin:$PATH
 echo "export PATH=/usr/local/php81/bin:\$PATH" >> ~/.bash_profile 
-````
+```
 
 #### Metanet
 
 https://support.metanet.ch/713#10591-php
-````
+```
 alias php='/opt/php80/bin/php' 
 echo "alias php='/opt/php80/bin/php'" >> ~/.bash_profile
 
 export PATH=/opt/php80/bin:$PATH
 echo "export PATH=/opt/php80/bin:\$PATH" >> ~/.bash_profile 
-````
+```
 
 #### Cyon
 
@@ -82,10 +82,10 @@ Bei Cyon muss ausserdem der Composer installiert werden: https://www.cyon.ch/sup
 ### Branch in der Shell anzeigen
 
 Um zu sehen, auf welchem branch man ist, ändern wir die bash. Im Hauptverzeichnis `nano .bashrc` ausführen. Dort folgende Zeilen anfügen:
-````
+```
 # show git branch
 export PS1="\u@\h \[\e[1m\]\w \[\e[0;32m\]\$(git branch 2>/dev/null | grep '^*' | colrm 1 2) \[\e[00m\]$ "
-````
+```
 
 ## Logins
 
@@ -179,19 +179,19 @@ Sollte Colima beim Starten eines Tasks stecken bleiben, kann das Problem durch d
 
 1. Colima stoppen:
 
-```SH
+```console
 colima stop
 ```
 
 2. Colima löschen
 
-```SH
+```console
 colima delete
 ```
 
 3. Colima neu starten
 
-```SH
+```console
 colima start
 ```
 
@@ -203,9 +203,9 @@ colima start
 
 Sollten nicht Datenbankfehler auftreten, kann die Datenbank gelöscht werden und ohne Inhalte von vorne begonnen werden. Die Struktur in Craft bleibt bestehen, dank der YAML Konfigurationsdateien.
 
-```` SH
+```console
 ddev delete --omit-snapshot
-````
+```
 
 Frontend öffnen
 Installieren
@@ -220,7 +220,7 @@ Es können alle Node Module auf einmal auf die aktuellste Major Version aktualis
 
 https://nodejs.dev/learn/update-all-the-nodejs-dependencies-to-their-latest-version
 
-``` SH
+```console
 sudo npm install -g npm-check-updates
 ncu -u
 npm install

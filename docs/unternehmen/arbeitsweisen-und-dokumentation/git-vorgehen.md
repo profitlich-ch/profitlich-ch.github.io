@@ -34,7 +34,7 @@ https://stackoverflow.com/a/26137730
 
 Um zu einem alten Stand auf Github zurückzugehen (wenn also schon gepusht wurde):
 
-``` SH
+```console
 git revert --no-commit 0766c053..HEAD
 git commit
 ```

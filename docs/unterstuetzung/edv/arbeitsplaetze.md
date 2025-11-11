@@ -10,7 +10,7 @@ Die Vorschau verkleinert Dokumente beim Drucken automatisch auf 95%, um sicher a
 
 Ändere per Terminal die Standardgrösse auf 100%:
 
-```bash
+```console
 defaults write com.apple.Preview PVImagePrintingScaleMode 0
 ```
 
@@ -18,13 +18,13 @@ defaults write com.apple.Preview PVImagePrintingScaleMode 0
 
 Das Dock ist entweder immer sichtbar oder erscheint, wenn der Mauszeiger an den unteren Bildschirmrand stösst. Wen das Dock stört, kann es ganz entfernen (Verzögerung auf 9999 Sekunden). Stattdessen lassen sich Programm per Spotlight öffnen (Cmd + Leertaste), zwischen Programmen schaltet Cmd + Tab um.
 
-```bash
+```console
 defaults write com.apple.dock autohide-delay -float 9999; killall Dock
 ```
 
 Der Standard lässt sich wiederhestellen mit
 
-```bash
+```console
 defaults delete com.apple.dock autohide-delay
 ```
 
@@ -32,7 +32,7 @@ defaults delete com.apple.dock autohide-delay
 
 Fensterscreenshots mit `Cmd + Shift + 4` haben standardmässig einen Schatten. So lässt er sich deaktivieren:
 
-```bash
+```console
 defaults write com.apple.screencapture disable-shadow -bool true
 killall SystemUIServer
 ```
@@ -83,7 +83,7 @@ Quelle: https://stewartadam.io/blog/2014/05/05/sharing-your-cyberduck-bookmarks-
 
 Finder › Gehe zu ›
 
-```bash
+```console
 ~/Library/Group Containers/G69SCX94XU.duck/Library/Application Support/duck
 ```
 
@@ -91,7 +91,7 @@ Ordner `Bookmarks` löschen
 
 Rechts Maustaste auf den Ordner `duck` › Dienste › Neues Terminal-Tab beim Ordner. Dort den folgenden Befehl eingeben, wobei `\[macUsername\]` gegen den Mac Benutzernamen (Ordnername in Library) und `\[googleUsername\]` gegen den Google Benutzernamen (gleich Mailadresse) auszutauschen ist.
 
-```bash
+```console
 ln -s ~/[macUsername]/Library/CloudStorage/GoogleDrive-[googleUsername]@profitlich.ch/Geteilte\ Ablagen/Profitlich/D\ Unterstützung/D3 Infrastruktur/03\ EDV/Software/Cyberduck/Bookmarks
 ```
 

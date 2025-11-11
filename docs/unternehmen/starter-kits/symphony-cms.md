@@ -60,7 +60,7 @@ $ npm install
 
 Diese Datei kann aus einem anderen Projekt überschrieben werden, wegen der in der Datei angegebenen FTP-Verbindungen. Zeile 9 ist auszutauschen:
 
-```JavaScript
+```js
 ALT
 const sass         = require(path.join(process.cwd(), 'node_modules/gulp-sass'));
 
@@ -78,7 +78,7 @@ SCSS entscheidet selbst, ob die Berechnung bei der Umwandlung zu CSS ausgeführt
 
 [https://sass-lang.com/documentation/values/calculations](https://sass-lang.com/documentation/values/calculations)
 
-```CSS
+```css
 ALT
 width: 100% * 5 / 16;
 
@@ -90,7 +90,7 @@ Weil das calc() auch im CSS landen kann, setze zwischen alle Operatoren Leerzeic
 
 #### math.calc
 
-```CSS
+```css
 ALT
 @return $number / ($number * 0 + 1);
 
@@ -100,7 +100,7 @@ NEU
 
 Dafür muss das math Modul geladen werden. Lade es global für alle SCSS Dateien in der Datei style.css, zuoberst in der ersten Zeile.
 
-```CSS
+```css
 @use 'sass:math';
 ```
 
@@ -110,7 +110,7 @@ Betroffen ist die Datei src/scss/funktionen/\_strip-unit.scss. Diese Dateie kann
 
 manche @if Konditionen sind fälschlicher Weise mit nur einem `=` geschrieben. Korrigiere sie zur korrekten `==` Schreibweise. Betroffen sind sicher die Datei \_einstellungen.scss.
 
-```CSS
+```css
 ALT
 @if ($modus = 'dev') {
   
@@ -124,7 +124,7 @@ NEU
 
 Ist das Backend weiss (Error 500 in der Entwicklertoolbar › Netzwerk), schalte in der `index.php` Fehlermeldungen ein. Füge zu Beginn folgenden Code ein:
 
-```INI
+```ini
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(-1);

@@ -36,7 +36,7 @@ github-backup $ORGANIZATION -P -f $ACCESS_TOKEN -o ~/Profitlich/BackupGithub --a
 
 ### Einzelrepository
 
-```SHELL
+```console
 export ACCESS_TOKEN=""
 export ORGANIZATION="profitlich-ch"
 export REPO="reponame"

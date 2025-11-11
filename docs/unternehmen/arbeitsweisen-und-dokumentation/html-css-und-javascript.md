@@ -74,7 +74,7 @@ Kann ein Redakteur Text formatieren und Absätze anlegen, fehlen diesen Inhalten
 
 Hier braucht es eine Ausnahme in der BEM Benennung. Ein Beispiel:
 
-```HTML
+```html
 <div class="hierdrin-ist-redaktioneller-text">
    <h2>Überschrift vom Redakteur</h2>
    <p>Text vom Redakteur</p>
@@ -193,7 +193,7 @@ Für effizientes Evethandling braucht ein Throttling oder Debouncing.
 
 Szenario: Auf einer Seite sollen auf all Elemente einer Liste ein Klick Event Handler gesetzt werden.
 
-```HTML
+```html
 <div class="liste" id="liste">
 
    <div class="liste__element"></div>
@@ -207,7 +207,7 @@ Szenario: Auf einer Seite sollen auf all Elemente einer Liste ein Klick Event Ha
 
 Setze einen einzigen Eventhandler auf das übergeordnete Element (deligiere also die Aufgabe an `.liste`). Setze nicht mit einer Schleife auf jedes Element einen Eventhandler.
 
-```JS
+```js
 $('#liste).on('click', '.liste__element', function() {
 	…
  });
