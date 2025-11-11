@@ -47,14 +47,17 @@ export default defineConfig({
                                 { text: 'Websitestandards', link: '/unternehmen/arbeitsweisen-und-dokumentation/websitestandards' },
                                 { text: 'Gestaltung & Usability', link: '/unternehmen/arbeitsweisen-und-dokumentation/gestaltung-und-usability' },
                                 { text: 'HTML, CSS & Javascript', link: '/unternehmen/arbeitsweisen-und-dokumentation/html-css-und-javascript' },
+                                { text: 'Git Vorgehen', link: '/unternehmen/arbeitsweisen-und-dokumentation/git-vorgehen' },
                                 { text: 'Briefings', link: '/unternehmen/arbeitsweisen-und-dokumentation/briefings' },
                                 { text: 'Vorlagenerstellung', link: '/unternehmen/arbeitsweisen-und-dokumentation/vorlagenerstellung' },
+                                { text: 'Barba', link: '/unternehmen/arbeitsweisen-und-dokumentation/barba' },
                             ]
                         },
                         {
                             text: 'Starter Kits',
                             items: [
-                                { text: 'Craft CMS', link: '/unternehmen/starter-kits/allgemein' },
+                                { text: 'Allgemein', link: '/unternehmen/starter-kits/allgemein' },
+                                { text: 'Entwicklungsumgebung', link: '/unternehmen/starter-kits/entwicklungsumgebung' },
                                 { text: 'Craft CMS', link: '/unternehmen/starter-kits/craft-cms' },
                                 { text: 'Kirby CMS', link: '/unternehmen/starter-kits/kirby-cms' },
                                 { text: 'Symphony CMS', link: '/unternehmen/starter-kits/symphony-cms' },
@@ -92,9 +95,14 @@ export default defineConfig({
                                 { text: 'Arbeitsplätze', link: '/unterstuetzung/edv/arbeitsplaetze' },
                                 { text: 'Hardware', link: '/unterstuetzung/edv/hardware' },
                                 { text: 'Backup', link: '/unterstuetzung/edv/backup' },
-                                { text: 'Akquise & Marketing', link: '/unterstuetzung/akquise-und-marketing/marketingkonzept' },
                             ]
-                        }
+                        },
+                        {
+                            text: 'Akquise & Marketing',
+                            items: [
+                                { text: 'Marketingkonzept', link: '/unterstuetzung/akquise-und-marketing/marketingkonzept' },
+                            ]
+                        },
                     ]
                 },
             ],

@@ -16,7 +16,7 @@ Zum Beispiel sind Bilder nicht einzeln eingebunden, sondern über ein Utility.
 
 ## Aufgaben im Quelltext kennzeichnen
 
-Aufgaben im Quelltext im Kommentar mit TODO beginnen. Mit installierter ‹Better Comments› Erweiterung werden solche Kommentare schwarz hinterlegt.
+Aufgaben im Quelltext im Kommentar mit `TODO` beginnen. Mit installierter ‹Better Comments› Erweiterung werden solche Kommentare schwarz hinterlegt.
 
 Es gibt noch weitere Schlüsselwörter (siehe Erweiterung).
 

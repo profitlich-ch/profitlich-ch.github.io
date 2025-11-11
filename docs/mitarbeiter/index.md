@@ -3,7 +3,7 @@
 layout: home
 
 features:
-  - title: B1 Mitarbeiterhandbuch 
+  - title: Mitarbeiterhandbuch 
     details: Alles rund ums Mitarbeitersein
     link: /mitarbeiter/mitarbeiterhandbuch
 ---

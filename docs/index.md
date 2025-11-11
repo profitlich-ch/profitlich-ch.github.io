@@ -38,7 +38,7 @@ features:
     link: /kunden
   - title: D Unterstützung
     details: EDV, Bibliothek, Vorlagen
-    link: /unterstützung
+    link: /unterstuetzung
   - title: E Archiv
     details: Vorgehen bei der Archivierung von Daten
     link: /archiv
