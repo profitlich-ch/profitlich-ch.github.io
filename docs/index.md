@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: ":Profitlich Handbuch"
-  text: "Handbuch der Profitlich GmbH"
-  tagline: CMS Anleitungen, Coding Guidelines, Mitarbeiterhandbuch
+  name: ":Profitlich"
+  text: "Mitarbeiterhandbuch"
+  tagline: Wir glauben an fröhlich-konstruktive Unzufriedenheit. Wir teilen Wissen nach dem Grundgedanken des Open Source. Dieses Handbuch legt unsere gesamte Dokumentation offen, ausgenommen Kundendaten und sicherheitskritische Informationen.
   actions:
     - theme: brand
       text: Zeiterfassung und Projektverwaltung
@@ -43,4 +43,3 @@ features:
     details: Vorgehen bei der Archivierung von Daten
     link: /archiv
 ---
-

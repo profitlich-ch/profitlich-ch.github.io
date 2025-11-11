@@ -15,27 +15,68 @@ export default defineConfig({
             { text: 'D Unterstützung', link: '/unterstuetzung' },
         ],
 
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/profitlich-ch' },
+        ],
+
         sidebar: {
             '/unternehmen/': [
                 {
                     text: 'A Unternehmen',
                     items: [
                         {
-                            text: 'Unternehmshandbuch',
+                            text: 'Das Unternehmen',
                             items: [
-                                { text: 'Unternehmensportrait', link: '/unternehmen/unternehmenshandbuch/unternehmensportrait.md' },
-                                { text: 'Unternehmensleitbild', link: '/unternehmen/unternehmenshandbuch/unternehmensleitbild.md' },
-                                { text: 'Unternehmensstruktur', link: '/unternehmen/unternehmenshandbuch/unternehmensstruktur.md' },
-                                { text: 'Mitarbeiterhandbuch', link: '/unternehmen/unternehmenshandbuch/mitarbeiterhandbuch.md' },    
+                                { text: 'Unternehmensportrait', link: '/unternehmen/handbuch/unternehmensportrait' },
+                                { text: 'Unternehmensleitbild', link: '/unternehmen/handbuch/unternehmensleitbild' },
+                                { text: 'Unternehmensstruktur', link: '/unternehmen/handbuch/unternehmensstruktur' },
                             ]
 
                         },
                         {
-                            text: 'Lenkung Dokumente & Daten',
+                            text: 'Umgang mit Dokumenten & Daten',
                             items: [
-                                { text: 'Umgang mit Daten', link: '/unternehmen/lenkung-dokumente-und-daten/umgang-mit-daten.md' },
-                                { text: 'Speicherorte', link: '/unternehmen/lenkung-dokumente-und-daten/speicherorte.md' },
-                                { text: 'Backup', link: '/unternehmen/lenkung-dokumente-und-daten/backup.md' },
+                                { text: 'Umgang mit Daten', link: '/unternehmen/umgang-mit-dokumenten-und-daten/umgang-mit-daten' },
+                                { text: 'Speicherorte', link: '/unternehmen/umgang-mit-dokumenten-und-daten/speicherorte' },
+                            ]
+                        },
+                        {
+                            text: 'Arbeitsweisen & Dokumentation',
+                            items: [
+                                { text: 'Programmierstandards', link: '/unternehmen/arbeitsweisen-und-dokumentation/programmierstandards' },
+                                { text: 'Websitestandards', link: '/unternehmen/arbeitsweisen-und-dokumentation/websitestandards' },
+                                { text: 'Gestaltung & Usability', link: '/unternehmen/arbeitsweisen-und-dokumentation/gestaltung-und-usability' },
+                                { text: 'HTML, CSS & Javascript', link: '/unternehmen/arbeitsweisen-und-dokumentation/html-css-und-javascript' },
+                                { text: 'Briefings', link: '/unternehmen/arbeitsweisen-und-dokumentation/briefings' },
+                                { text: 'Vorlagenerstellung', link: '/unternehmen/arbeitsweisen-und-dokumentation/vorlagenerstellung' },
+                            ]
+                        },
+                        {
+                            text: 'Starter Kits',
+                            items: [
+                                { text: 'Craft CMS', link: '/unternehmen/starter-kits/allgemein' },
+                                { text: 'Craft CMS', link: '/unternehmen/starter-kits/craft-cms' },
+                                { text: 'Kirby CMS', link: '/unternehmen/starter-kits/kirby-cms' },
+                                { text: 'Symphony CMS', link: '/unternehmen/starter-kits/symphony-cms' },
+                            ]
+                        },
+                        {
+                            text: 'Projektleitung',
+                            items: [
+                                { text: 'Projektzyklus', link: '/unternehmen/projektleitung/projektzyklus' },
+                            ]
+                        },
+                    ]
+                },
+            ],
+            '/mitarbeiter/': [
+                {
+                    text: 'B Mitarbeiter',
+                    items: [
+                        {
+                            text: 'Allgemein',
+                            items: [
+                                { text: 'Mitarbeiterhandbuch', link: '/mitarbeiter/allgemein/mitarbeiterhandbuch' },
                             ]
                         }
                     ]
@@ -48,16 +89,15 @@ export default defineConfig({
                         {
                             text: 'EDV',
                             items: [
-                                { text: 'Arbeitsplätze', link: '/unterstuetzung/edv/arbeitsplaetze.md' },
+                                { text: 'Arbeitsplätze', link: '/unterstuetzung/edv/arbeitsplaetze' },
+                                { text: 'Hardware', link: '/unterstuetzung/edv/hardware' },
+                                { text: 'Backup', link: '/unterstuetzung/edv/backup' },
+                                { text: 'Akquise & Marketing', link: '/unterstuetzung/akquise-und-marketing/marketingkonzept' },
                             ]
                         }
                     ]
                 },
             ],
         },
-
-        socialLinks: [
-            { icon: 'github', link: 'https://github.com/profitlich-ch' },
-        ]
     }
 })

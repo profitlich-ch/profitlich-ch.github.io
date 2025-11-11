@@ -3,11 +3,17 @@
 layout: home
 
 features:
-  - title: Unternehmenshandbuch
-    details: Hintergründe zum Unternehmen und das Mitarbeiterhandbuch
-    link: /unternehmen/unternehmenshandbuch/mitarbeiterhandbuch.md
-  - title: Mitarbeiterhandbuch
-    details: Das Mitarbeiterhandbuch
-    link: /unternehmen/unternehmenshandbuch/mitarbeiterhandbuch.md
+  - title: Das Unternehmen
+    details: Hintergründe zum Unternehmen
+    link: /unternehmen/handbuch/unternehmensportrait
+  - title: Umgang mit Dokumenten & Daten
+    details: Umgang mit Dateien und Passwörtern
+    link: /unternehmen/umgang-mit-dokumenten-und-daten/umgang-mit-daten
+  - title: Starter Kits
+    details: Ausgangspunkte für neue CMS Projekte
+    link: /unternehmen/starter-kits/craft-cms
+  - title: Projektleitung
+    details: Steuerung von Projekten
+    link: /unternehmen/projektleitung/projektzyklus
 ---
 

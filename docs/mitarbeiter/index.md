@@ -5,6 +5,6 @@ layout: home
 features:
   - title: B1 Mitarbeiterhandbuch 
     details: Alles rund ums Mitarbeitersein
-    link: /mitarbeiter/mitarbeiterhandbuch.md
+    link: /mitarbeiter/mitarbeiterhandbuch
 ---
 
