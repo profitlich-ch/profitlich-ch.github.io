@@ -1,3 +1,8 @@
+---
+order: 2
+---
+
+
 # Planköpfe
 
 Planköpfe sind im Büro und auf der Baustelle ein Werkzeug: welchen Plan halte ich in der Hand, ist es die richtige Version, woraus beziehen sich Höhenangaben. Jeder Benutzer erwartet standardisierte Angaben. Während Mitarbeiter des eigenen Architekturbüros den Büroplankopf durch die Gewohnheit des Benutzens kennen, sehen Fachplaner und ausführende Unternehmen von Projekt zu Projekte immer neue Planköpfe. Wir meinen, dass gut strukturierte, schnell lesbare Planköpfe ein achtungsvollen Umgang mit Planer zeigen und – noch wichtiger – Fehler vermeiden.

@@ -5,7 +5,7 @@ layout: home
 features:
   - title: Das Unternehmen
     details: Hintergründe zum Unternehmen
-    link: /unternehmen/handbuch/unternehmensportrait
+    link: /unternehmen/das-unternehmen/unternehmensportrait
   - title: Umgang mit Dokumenten & Daten
     details: Dateien, Dateinamen, Versionierung und Passwörter
     link: /unternehmen/umgang-mit-dokumenten-und-daten/speicherorte
