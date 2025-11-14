@@ -1,4 +1,4 @@
-## Marketingkonzept
+# Marketingkonzept
 
 ## Zielgruppe Grafikbüros
 

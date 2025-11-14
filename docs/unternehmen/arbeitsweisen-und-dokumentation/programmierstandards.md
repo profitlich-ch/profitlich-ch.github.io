@@ -1,3 +1,7 @@
+---
+order: 4
+---
+
 # Programmierstandards
 
 Ziel ist es, jede Programmierarbeit, die sich von Projekt zu Projekt wiederholt, einem Standard folgen zu lassen. Gibt es Branchenstandards, übernehmen wir diese, ansonsten schaffen wir selber welche.

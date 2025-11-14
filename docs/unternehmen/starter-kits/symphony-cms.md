@@ -1,3 +1,7 @@
+---
+order: 6
+---
+
 # Symphony CMS
 
 ## Projekt aufsetzen

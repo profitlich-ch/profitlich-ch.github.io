@@ -1,4 +1,8 @@
-# Lenkung Dokumente & Daten
+---
+order: 2
+---
+
+# Dateien
 
 ## Umgang mit Daten
 
@@ -10,8 +14,6 @@ Aufgaben erfassen wir in Github:
 - Aufgaben zu abgeschlossenen Projekte erfasse als issue im repository und verlinke es mit dem Github Projekt Laufendes
 
 Entsteht aus Aufgaben Wissen, das bewahrt werden soll, wird es ins Unternehmenshandbuch geschrieben.
-
-## Datenhaltung
 
 ## Dateinamen und Versionierung
 

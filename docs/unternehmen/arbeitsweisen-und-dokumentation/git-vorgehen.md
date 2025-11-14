@@ -1,6 +1,10 @@
+---
+order: 5
+---
+
 # Git Vorgehen
 
-## Normalfall 
+## Normalfall
 
 - Die aktuelle Version ist der main branch
 - TODO: Vorgehen mit Releases entwickeln (vor allem wenn das Projekt produktiv ist)
