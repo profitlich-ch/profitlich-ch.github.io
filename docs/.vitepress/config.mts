@@ -14,6 +14,9 @@ export default defineConfig({
             { text: 'C Projekte', link: '/projekte' },
             { text: 'D Unterstützung', link: '/unterstuetzung' },
         ],
+        search: {
+            provider: 'local'
+        },
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/profitlich-ch' },
@@ -36,8 +39,9 @@ export default defineConfig({
                         {
                             text: 'Umgang mit Dokumenten & Daten',
                             items: [
-                                { text: 'Umgang mit Daten', link: '/unternehmen/umgang-mit-dokumenten-und-daten/umgang-mit-daten' },
                                 { text: 'Speicherorte', link: '/unternehmen/umgang-mit-dokumenten-und-daten/speicherorte' },
+                                { text: 'Dateien', link: '/unternehmen/umgang-mit-dokumenten-und-daten/dateien' },
+                                { text: 'passwoerter', link: '/unternehmen/umgang-mit-dokumenten-und-daten/passwoerter' },
                             ]
                         },
                         {

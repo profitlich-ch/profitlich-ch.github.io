@@ -7,10 +7,10 @@ features:
     details: Hintergründe zum Unternehmen
     link: /unternehmen/handbuch/unternehmensportrait
   - title: Umgang mit Dokumenten & Daten
-    details: Umgang mit Dateien und Passwörtern
-    link: /unternehmen/umgang-mit-dokumenten-und-daten/umgang-mit-daten
+    details: Dateien, Dateinamen, Versionierung und Passwörter
+    link: /unternehmen/umgang-mit-dokumenten-und-daten/speicherorte
   - title: Arbeitsweisen & Dokumentation
-    details: Ausgangspunkte für neue CMS Projekte
+    details: Standards und Best Practices für unsere Projekte
     link: /unternehmen/arbeitsweisen-und-dokumentation/programmierstandards
   - title: Starter Kits
     details: Ausgangspunkte für neue CMS Projekte
