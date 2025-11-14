@@ -103,6 +103,27 @@ export default defineConfig({
                                 { text: 'Marketingkonzept', link: '/unterstuetzung/akquise-und-marketing/marketingkonzept' },
                             ]
                         },
+                        {
+                            text: 'Bibliothek',
+                            items: [
+                                {
+                                    text: 'Javascript',
+                                    collapsed: true,
+                                    items: [
+                                        { text: 'Messen von Elementen', link: '/unterstuetzung/bibliothek/javascript/messen-von-elementen' },
+                                    ]
+                                },
+                                {
+                                    text: 'Vorlagenerstellung',
+                                    collapsed: true,
+                                    items: [
+                                        { text: 'Office', link: '/unterstuetzung/bibliothek/vorlagenerstellung/office' },
+                                        { text: 'Planköpfe', link: '/unterstuetzung/bibliothek/vorlagenerstellung/plankoepfe' },
+                                        { text: 'Signaturen', link: '/unterstuetzung/bibliothek/vorlagenerstellung/signaturen' },
+                                    ]
+                                },
+                            ]
+                        },
                     ]
                 },
             ],

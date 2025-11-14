@@ -9,5 +9,8 @@ features:
   - title: Akquise &  Marketing
     details: Konzept und Planung
     link: /unterstuetzung/akquise-und-marketing/marketingkonzept
+  - title: Bibliothek
+    details: Anleitungen, Lernmaterial, Nachschlagewerke. Siehe auch Dateien unter D Unterstüzung › D4 Bibliothek.
+    link: /unterstuetzung/bibliothek/javascript/messen-von-elementen
 ---
 

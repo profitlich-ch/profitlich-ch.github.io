@@ -32,10 +32,6 @@ Dynamisch gesetzte Klassen sollen von den übrigen unterscheidbar sein. Daher er
 
 Indem alle Gestaltung ausschliesslich über Klassen erfolgt, gibt es kein Durcheinander.
 
-### Schreibweisen und Ordnung
-
-- Rücke konsequent ein
-
 #### SCSS
 
 - Setze zwischen Selektor und `{` ein Leerzeichen
@@ -151,7 +147,7 @@ Beachte auch die Hinweise zu effizienten Animationen.
 
 ### Verwende für Spalten die SCSS Funktion ‹breite›
 
-Dadurch isgt es möglich, per Einstellung in die Entwicklungsumgebung zwischen px und vw Angaben umzuschalten (festes/mitwachsendes Layout).
+Dadurch ist es möglich, per Einstellung in die Entwicklungsumgebung zwischen px und vw Angaben umzuschalten (festes/mitwachsendes Layout).
 
 ### Die Reihenfolge im SCSS entspricht der im HTML
 
@@ -195,13 +191,9 @@ Szenario: Auf einer Seite sollen auf all Elemente einer Liste ein Klick Event Ha
 
 ```html
 <div class="liste" id="liste">
-
    <div class="liste__element"></div>
-
    <div class="liste__element"></div>
-
    <div class="liste__element"></div>
-
 </div>
 ```
 
@@ -209,7 +201,7 @@ Setze einen einzigen Eventhandler auf das übergeordnete Element (deligiere also
 
 ```js
 $('#liste).on('click', '.liste__element', function() {
-	…
+	console.log('.liste__element clicked');
  });
 ```
 
@@ -234,17 +226,3 @@ Was below the fold liegt, sollte erst geladen werden, wenn es nahe an sichtbaren
 - SVG
 
 Für SVG und Skripte braucht es die lazysizes unveil Funktion (in domscript.js)
-
-## Messen von Elementen
-
-### Difference between offsetHeight, clientHeight and scrollHeight
-
-[https://javascript.info/coordinates](https://javascript.info/coordinates)
-
-[https://medium.com/@jbbpatel94/difference-between-offsetheight-clientheight-and-scrollheight-cfea5c196937](https://medium.com/@jbbpatel94/difference-between-offsetheight-clientheight-and-scrollheight-cfea5c196937)
-
-`clientHeight` beinhaltet nur Inhalt und padding, `offsetHeight` beinhaltet zusätzlich Scrollbar und border.
-
-https://learn.microsoft.com/en-us/previous-versions//hh781509(v=vs.85)#understanding-properties-that-measure-element-dimension-and-location
-
-[![grafik.png](https://unternehmenshandbuch.profitlich.ch/uploads/images/gallery/2023-09/scaled-1680-/grafik.png)](https://unternehmenshandbuch.profitlich.ch/uploads/images/gallery/2023-09/grafik.png)

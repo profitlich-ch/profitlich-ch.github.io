@@ -1,6 +1,5 @@
 # Gestaltung und Usability
 
-
 ## Technische Gestaltungsqualität
 
 ### Verläufe
