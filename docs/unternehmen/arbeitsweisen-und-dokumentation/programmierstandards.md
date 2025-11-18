@@ -6,6 +6,8 @@ order: 4
 
 Ziel ist es, jede Programmierarbeit, die sich von Projekt zu Projekt wiederholt, einem Standard folgen zu lassen. Gibt es Branchenstandards, übernehmen wir diese, ansonsten schaffen wir selber welche.
 
+Und leiten die Prinzipien des [Clean Code](https://de.wikipedia.org/wiki/Clean_Code), [KISS](https://de.wikipedia.org/wiki/KISS-Prinzip) und [Principle of least surprise/astonishment](https://de.wikipedia.org/wiki/Principle_of_Least_Surprise)
+
 ## Nutze Bibliotheken
 
 Viele Aufgaben wurden schon von Anderen gelöst. Prüfe zuerst, ob es eine Bibliothek für die jeweilige Aufgabe gibt. Die Bibliothek soll

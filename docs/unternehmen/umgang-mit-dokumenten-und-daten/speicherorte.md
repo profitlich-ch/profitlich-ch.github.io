@@ -4,59 +4,58 @@ order: 1
 
 # Speicherorte
 
-### Ordnungsstruktur
+Diese Ordnung gilt für alle Speicherorte, egal ob Handbuch, Datenserver, Mail Labels oder sonstwo. Die ersten beiden Ebenen haben vorgegebene Namen, darunter werden Ordner mit sprechenden Namen angelegt, angelehnt an das [7-Ordner-System](https://www.sekretaria.de/bueroorganisation/organisation/ablage/7-ordner-system/). Wir nutzen [keine Nummern für Ordner](https://stackoverflow.com/a/12993527); für Flexibilität, schnelles Lesen nach Namen und den [KISS](https://de.wikipedia.org/wiki/KISS-Prinzip) und [POLS](https://de.wikipedia.org/wiki/Principle_of_Least_Surprise) Prinzipien.
 
-Auch wenn Dokumentationen und Aufgaben nicht im Ordnersystem liegen, können die Ordner verwendet werden, um zugehörige Dateien abzulegen.
-
-Die :green_book: markierten Punkte sind im Unternehmenshandbuch abgelegt.  
+Die :green_book:  markierten Punkte sind im Unternehmenshandbuch abgelegt.  
 Die :smiley_cat: markierten Punkte sind in Github.  
-Die :closed_book: markierten Punkte sind nur der Geschäftsleitung zugänglich.
+Die :closed_book:  markierten Punkte sind nur der Geschäftsleitung zugänglich.  
+Die :file_folder: markierten Punkte sind auf dem Fileserver.
 
 - A Unternehmen
   - A1 Unternehmensleitung
-    - :green_book:01 Unternehmenshandbuch (diese Website)
-    - :green_book:[02 Unternehmensportrait](https://handbuch.profitlich.ch/unternehmen/handbuch/unternehmensportrait)
-    - :green_book:[03 Unternehmensleitbild](https://handbuch.profitlich.ch/unternehmen/handbuch/unternehmensleitbild)
-    - :green_book:[04 Unternehmensstruktur](https://handbuch.profitlich.ch/unternehmen/handbuch/unternehmensstruktur)
-    - :closed_book:05 Jahresplanung
-    - :closed_book:06 Qualitätsplanung
-    - :closed_book:07 Liquiditätsplanung
+    - :green_book: Unternehmenshandbuch (diese Website)
+    - :green_book: [Unternehmensportrait](https://handbuch.profitlich.ch/unternehmen/handbuch/unternehmensportrait)
+    - :green_book: [Unternehmensleitbild](https://handbuch.profitlich.ch/unternehmen/handbuch/unternehmensleitbild)
+    - :green_book: [Unternehmensstruktur](https://handbuch.profitlich.ch/unternehmen/handbuch/unternehmensstruktur)
+    - :closed_book: Jahresplanung
+    - :closed_book: Qualitätsplanung
+    - :closed_book: Liquiditätsplanung
   - A2 Managementsystem
-    - :green_book:01 Lenkung Dokumente &amp; Daten
-    - :green_book:02 Arbeitsweisen &amp; Dokumentation
-    - :smiley_cat:03 Systemverbesserung
+    - :green_book: Lenkung Dokumente &amp; Daten
+    - :green_book: Arbeitsweisen &amp; Dokumentation
+    - :smiley_cat: [Systemverbesserung](https://github.com/profitlich-ch/profitlich-ch.github.io/discussions)
 - B Personal
-  - :closed_book:B1 Mitarbeiter
-  - B2 Eigene Dateien
-  - :closed_book:B3 Personalakquise
-  - :closed_book:B4 Rahmenabkommen
+  - :closed_book: B1 Mitarbeiter
+  - :file_folder: B2 Eigene Dateien
+  - :closed_book: B3 Personalakquise
+  - :closed_book: B4 Rahmenabkommen
 - C Kunden
 - D Unterstützung
   - D1 Akquisition &amp; Marketing
-    - 01 Akquisition
-    - 02 Marketing
-  - :closed_book:D2 Verwaltung
-    - :closed_book:01 Buchhaltung
-    - :closed_book:02 Büro
-    - :closed_book:03 Löhne
-    - :closed_book:04 Berichte &amp; Steuerung
-    - :closed_book:05 Versicherungen
-    - :closed_book:06 Verträge
+    - Akquisition
+    - Marketing
+  - :closed_book: D2 Verwaltung
+    - :closed_book: Berichte &amp; Steuerung
+    - :closed_book: Büro
+    - :closed_book: Finanzbuchhaltung
+    - :closed_book: Löhne
+    - :closed_book: Versicherungen
+    - :closed_book: Verträge
   - D3 Infrastruktur
-    - 01 Büroeinrichtung
-    - 02 Büromaterial
-    - 02 Spezialisten
-    - :green_book:03 EDV
-      - :green_book:Hardware ›
-      - :green_book:Software ›
+    - :file_folder: Büroeinrichtung
+    - :file_folder: Büromaterial
+    - :file_folder: Spezialisten
+    - :green_book: EDV
+      - :green_book: Hardware
+      - :green_book: Software
   - D4 Bibliothek
-    - 01 Normen &amp; Gesetze
-    - 02 Planungshilfen
-    - 03 Fotos
-    - 04 Schriften
-  - D5 Vorlagen
-  - D6 Datenaustausch  
+    - :file_folder: Fotos
+    - :file_folder: Normen &amp; Gesetze
+    - :file_folder: Planungshilfen
+    - :file_folder: Schriften
+  - :file_folder: D5 Vorlagen
+  - :file_folder: D6 Datenaustausch  
         *Dieser Ordner hilft, zwischen Arbeitsplätzen/Computern Daten auszutauschen. Dateien bitte nach Verwendung wieder löschen.*
-- E Archiv
+- :file_folder: E Archiv
 - F Lokal  
     *Der Ordner F wird auf jedem Computer lokal unter `~user/Profitlich/F Lokal` angelegt und dient als Speicherorte für das Klonen von repositories*
