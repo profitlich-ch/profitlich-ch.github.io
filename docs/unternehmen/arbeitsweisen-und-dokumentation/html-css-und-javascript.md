@@ -216,12 +216,6 @@ Event Delegation ist effizienter für den Browser. Und es funktioniert auch noch
 
 ### Spamschutz für E-Mailadressen
 
-### Externe Skripte
-
-### Animation: GSAP
-
-### Slider: Swiper.js
-
 ### Lazyloading: Lazysizes
 
 Was below the fold liegt, sollte erst geladen werden, wenn es nahe an sichtbaren Bereich gescrollt wird.
