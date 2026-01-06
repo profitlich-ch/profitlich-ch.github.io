@@ -6,8 +6,6 @@
 
 Zu Beginn wirst Du vor allem mitwirken und Dich hineinfinden, wie wir hier arbeiten. Sobald Du einen Überblick gewonnen hast, wirst Du Ideen haben, was man anders, besser machen könnte. Du bringst Deine Fähigkeiten mit und Deine Interessen – setze sie ein und forme das Büro mit!
 
-Bis auf das Buch ‹Unternehmenshandbuch› sind alle Bücher von Dir bearbeitbar. Nutze sie als lebendigen Teil Deiner Arbeit, ergänze nebenher, korrigiere und mache es so zu einem Speicher unseres gemeinsamen Wissens.
-
 ### Gutes Werkzeug ist wichtig
 
 Wenn Du etwas für Deine Arbeit benötigst, das Dir fehlt, das Deine Arbeit aber vereinfachen würde, bitte um dessen Anschaffung. Das kann Dein Lieblingsstift sein, eine Software oder auch ein Backofen (okay, das ist Moritz’ Wunsch, vermutlich nicht Deiner – oder doch?).
@@ -17,6 +15,12 @@ Wenn Du etwas für Deine Arbeit benötigst, das Dir fehlt, das Deine Arbeit aber
 Wir nutzen Standards, um Qualität zu halten, und wir entwickeln uns aus Freude und Neugier weiter.
 
 Orientiere Dich an dokumentierten Arbeitsweisen, dokumentiere undokumentierte Arbeitswesen, schlage Arbeitsweisen vor, wo es noch keine geordneten gibt, und mache Gegenvorschläge, wo Du eine Verbesserung wünschst.
+
+### Handbuch
+
+Dieses Handbuch ist für das ganze Team bearbeitbar. Nutze es als lebendigen Teil Deiner Arbeit, ergänze nebenher, korrigiere und mache es so zu einem Speicher unseres gemeinsamen Wissens.
+
+Um es zu bearbeiten, klone das repository https://github.com/profitlich-ch/profitlich-ch.github.io/.
 
 ### Teilprojekte abschliessen
 
@@ -35,16 +39,7 @@ Für die kontinuierliche Entwicklung und Verbesserung gibt es in Asana das Proje
 
 Suche in Absprache Aufgaben aus der Liste heraus, die Du angehst. In Absprache, weil Du so hören kannst, was schon an Gedanken und Recherche da ist.
 
-## Büroräume
-
-### Dienst an der Gemeinschaft
-
-Wir haben keinen Ämtliplan, sondern vertrauen darauf, dass jeder ein Auge darauf hat, was es braucht:
-
-- Handtücher waschen
-- Material nachkaufen: WC-Papier, Müllbeutel,
-
-Geht Material zur Neige, kümmere Dich bitte um Ersatz (Müllbeutel, Toilettenpapier, Olivenöl, …). Lege den Beleg ins Belegefach.
+## Büro
 
 ### Verlassen des Büros
 
@@ -66,7 +61,7 @@ Wir sind davon überzeugt, dass das Miteinander im Büro bessere Ideen bringt, m
 
 Eine Woche hat 40 Arbeitsstunden (ohne Pausen).  
 Es gilt Jahresarbeitszeit.  
-Das Arbeitszeitkonto darf um +/- 20 Stunden vom Soll abweichen
+Das Arbeitszeitkonto darf um +/- 20 Stunden vom Soll abweichen. Melde Dich von Dir aus, wenn Du das Soll über-/unterschreitest, so dass wir gemeinsam eine Lösung finden können.
 
 #### Zeiterfassung
 
@@ -74,7 +69,7 @@ Erfasse Deine Arbeitsstunden spätestens am Ende jedes Tages. Die Zeiterfassung 
 
 #### Pausen
 
-Im Büro machen wir oft vormittags und nachmittags eine Pause. Du entscheidest selber, wann Du eine Pause machen möchtest und wie lange. Alle Pausen sind Freizeit.
+Du entscheidest selber, wann Du eine Pause machen möchtest und wie lange. Alle Pausen sind Freizeit.
 
 ### Ferien
 
