@@ -33,6 +33,10 @@ Der letzte Namensbestandteil nennt den Namen des Bereichs und sagt somit , welch
 
 Die Bestandteile zuvor TODO
 
+### Felder
+
+Es kann sinnvoll sein, ein einmal angelegtes Feld mehrfach zu benutzen. Allerdings kann es sein, dass man später einmal an einer Stelle im Backend etwas dokumentieren will (Default Instructions). Diese instruction erscheint dann überall, wo das Feld verwendet wird. Denke daher inhaltlich, ob eine Mehrfachnutzung sinnvoll ist.
+
 ### Feldnamen
 
 Feldnamen im CMS (zum Beispiel ‹Titel›) und deren Klasse im HTML sollen gleich heissen (`<h2 class="veranstaltung__titel">`).
