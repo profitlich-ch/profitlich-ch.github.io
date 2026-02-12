@@ -178,6 +178,31 @@ Zu definieren: margin oder padding, nach oben oder unten
 Änderungen sind so leichter, weil sie nur an einer Stelle gemacht werden brauchen. Darüber hinaus helfen Variablen durch ihre sprechenden Namen, eine Berechnung zu verstehen.
 
 
+## CSS
+
+### Animationen (transition, keyframes)
+
+In die Regeln für den animierten Zustand kommen nur die Angaben, die eine Änderung durchlaufen. Alle anderen Angaben kommen in den Standardzustand. Wird zum Beispiel ein Menü bei Klick auf einen Hamburger in den Bildschirm geschoben, wird nur `transform: translate` animiert. Die Anordnung der Elemente im Menü ist immer gesetzt. Sonst müsste der Browser bei jeder Animation die Anordnung der Elemente neu setzen; das ist ineffizient und kann zu Anzeigefehlern führen, im Zusammenhang mit Javascript auch zu Berechnungsfehlern.
+
+Beschränke die Animation auf das, was wirklich animiert werden soll. Also keine allgemeine `transition: 0.5s ease-in`, sondern spezifisch `transition: transform 0.5s ease-in`. Auch hier geht es darum, ressourcensparend zu sein, ausserdem können sonst unbeabsichtigte Animationen passieren.
+
+Es braucht die `transition`-Angabe für beide Zustände, denn sie gilt immer nur für den Ausgangspunkt der Animation.
+
+```css
+.menu {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+}
+.body[data-menu-active="true"] .menu {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+}
+```
+
+
+
 ## Javascript
 
 ### Throttle/Debounce: Event auf Browsergrösse, Cursorposition, Scrollposition bremsen
