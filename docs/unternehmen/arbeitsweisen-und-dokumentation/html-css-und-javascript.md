@@ -186,7 +186,7 @@ In die Regeln für den animierten Zustand kommen nur die Angaben, die eine Ände
 
 Beschränke die Animation auf das, was wirklich animiert werden soll. Also keine allgemeine `transition: 0.5s ease-in`, sondern spezifisch `transition: transform 0.5s ease-in`. Auch hier geht es darum, ressourcensparend zu sein, ausserdem können sonst unbeabsichtigte Animationen passieren.
 
-Es braucht die `transition`-Angabe für alle CSS Zustände, denn sie gilt immer nur für den jeweiligen Zustand des.
+Es braucht die `transition`-Angabe für alle CSS Zustände, denn sie gilt immer nur für den jeweiligen Zustand des Elements.
 
 ```css
 .menu {
