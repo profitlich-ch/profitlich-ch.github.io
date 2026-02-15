@@ -83,16 +83,20 @@ Soll die Mail nur versendet werden, wenn der enry neu angelegt wird, braucht es 
 
 ## Staging/Production
 
+### Bei Verwendung der GraphL API
+
+Auf dem staging/production System ist die Adresse der API eine andere. Daher braucht es eine eigene Dotenv `.env.production`. Diese liegt auf dem Entwicklungssystem und wird automatisch von Vite für den build benutzt.
+
 ### Cronjobs einrichten
 Die automatische Ausführung der Craft Queue ist in der config deaktiviert. Statdessen braucht es Cronjonbs im Hosting:
 
-### Craft Queue
+#### Craft Queue
 Häufigkeit `*****`
 ```
 /usr/bin/bash /home/ANMELDENAME/public_html/ORDNERNAME/cronjobs/craft-queue.sh
 ```
 
-## Bei Verwendung von Blitz
+#### Bei Verwendung von Blitz
 Häufigkeit `*5***`
 ```
 /usr/bin/bash /home/SERVERNAME/public_html/ORDNERNAME/cronjobs/blitz-cache-home-listing.sh
