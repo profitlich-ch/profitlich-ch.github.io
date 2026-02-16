@@ -23,6 +23,10 @@ https://github.com/profitlich-ch/template-craftcms/
 11. Site language üblicherweise de-CH
 12. Admin login `xxx-admin` mit xxx = Kundenkürzel
 
+## Dateipfade
+
+Nutze für alle Dateipfade die in der `config/general.php` angelegten Aliase.
+
 ## Nomenklatur
 
 ### Datenquellen
@@ -68,13 +72,6 @@ In vielen Fällen ist es sinnvoll, ein zusätzliches Feld anzulegen, das automat
 - Im Newsletter des Theaters am Bahnhof wählt ein Redakeur Veranstaltungen aus und sieht dabei nicht nur den Titel der Veranstaltung, sondern auch den Archivstatus und ob Bühne oder Atelierkino
 - Beim Theater am Banhof zeigt die URL zusätzlich zum Namen der Veranstaltung, dass es ein Special ist, so dass die Veranstaltung ohne Special und das Special nicht so aussehen: veranstaltungstitel-2 *(nicht im Projekt umgesetzt)*
 
-## Dateinamen von redaktionellen Uploads
-
-Ziel ist es, dass auf der Website jedes Bild und jede Datei einen Namen hat, der seinen Inhalt benennt. Bilder sollen zusätzlich ein `alt` Attribut tragen, das den Bildinhalt benennt
-
-Dateinamen sollen daher nicht aus dem Upload des Redakteurs übernommen werden, sondern vom Redaktionssystem vergeben werden.
-
-
 ## Mailversand über Trigger
 
 Ist der Trigger das Anlegen eines neuen entry, löst der Trigger zwei Mal aus. Das ist, weil Craft zuerst einen Draft/Revision anlegt und dieser ein eigenständiger entry ist. Der Trigger benötigt daher zwei Filter: `is not a draft` und `is not a revision`. Das ist [dokumentiert in einem issue](https://github.com/ryssbowh/craft-triggers/issues/3) des trigger Plugins.
@@ -86,6 +83,8 @@ Soll die Mail nur versendet werden, wenn der enry neu angelegt wird, braucht es 
 ### Bei Verwendung der GraphL API
 
 Auf dem staging/production System ist die Adresse der API eine andere. Daher braucht es eine eigene Dotenv `.env.production`. Diese liegt auf dem Entwicklungssystem und wird automatisch von Vite für den build benutzt.
+
+Die Dotenv braucht andere Werte für die Datenbankverbindung und für alle URLs. Siehe `.env.example.dev` und `.env.example.staging-production` im template repository.
 
 ### Cronjobs einrichten
 Die automatische Ausführung der Craft Queue ist in der config deaktiviert. Statdessen braucht es Cronjonbs im Hosting:
