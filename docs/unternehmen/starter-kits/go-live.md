@@ -6,7 +6,7 @@ order: 7
 
 
 > [!CAUTION]
-> Die Überschriften müssen unverändert bleiben, sowohl im Wortlaut als in der Reihenfolge
+> Die Überschriften müssen unverändert bleiben, sowohl im Wortlaut als in der Reihenfolge. Die untenstehenden Aufgaben werden per Github Action als Issue Templates in die beiden repositories template-craftcms und template-kirbycms kopiert.
 
 ## Allgemein
 
