@@ -5,6 +5,7 @@ import taskLists from 'markdown-it-task-lists'
 // https://vitepress.dev/reference/site-config
 const vitePressOptions = {
     title: ":Profitlich Handbuch",
+    titleTemplate: ':title  :Profitlich Handbuch',
     description: "Handbuch der Profitlich GmbH",
     cleanUrls: true,
     themeConfig: {

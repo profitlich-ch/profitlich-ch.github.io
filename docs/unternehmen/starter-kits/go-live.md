@@ -72,4 +72,4 @@ order: 7
 
 ## Kirby CMS
 
-- - [ ] Kirby-spezifischer Task
+- [ ] Kirby-spezifischer Task
