@@ -10,6 +10,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "markdown-it-task-lists": "^2.1.1",
     "vitepress-mermaid-renderer": "^1.1.5",
     "vitepress-plugin-comment-with-giscus": "^1.1.15"
   }

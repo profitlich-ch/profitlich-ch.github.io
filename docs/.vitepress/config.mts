@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar';
+import taskLists from 'markdown-it-task-lists'
 
 // https://vitepress.dev/reference/site-config
 const vitePressOptions = {
@@ -27,39 +28,51 @@ const vitePressOptions = {
 
 const vitePressSidebarOptions = [
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'unternehmen',
-      basePath: '/unternehmen/',
-      resolvePath: '/unternehmen/',
-      useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
-      sortMenusByFrontmatterOrder: true,
+        documentRootPath: 'docs',
+        scanStartPath: 'unternehmen',
+        basePath: '/unternehmen/',
+        resolvePath: '/unternehmen/',
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'mitarbeiter',
-      resolvePath: '/mitarbeiter/',
-      useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
-      sortMenusByFrontmatterOrder: true,
+        documentRootPath: 'docs',
+        scanStartPath: 'mitarbeiter',
+        resolvePath: '/mitarbeiter/',
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'projekte',
-      resolvePath: '/projekte/',
-      useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
-      sortMenusByFrontmatterOrder: true,
+        documentRootPath: 'docs',
+        scanStartPath: 'projekte',
+        resolvePath: '/projekte/',
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
     },
     {
-      documentRootPath: 'docs',
-      scanStartPath: 'unterstuetzung',
-      resolvePath: '/unterstuetzung/',
-      useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
-      sortMenusByFrontmatterOrder: true,
-      collapseDepth: 2,
+        documentRootPath: 'docs',
+        scanStartPath: 'unterstuetzung',
+        resolvePath: '/unterstuetzung/',
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusByFrontmatterOrder: true,
+        collapseDepth: 2,
     },
 ]
 
-export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions));
+export default defineConfig(
+  withSidebar(
+    {
+      ...vitePressOptions,
+      markdown: {
+        config: (md) => {
+          md.use(taskLists)
+        }
+      }
+    },
+    vitePressSidebarOptions
+  )
+)
