@@ -46,7 +46,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.GO_LIVE_ISSUE_TEMPLATES }}
         with:
           source-directory: dist/craft
-          destination-github-username: profitlich
+          destination-github-username: profitlich-ch
           destination-repository-name: template-craftcms
           target-directory: .github/ISSUE_TEMPLATE
           target-branch: main
@@ -57,7 +57,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.GO_LIVE_ISSUE_TEMPLATES }}
         with:
           source-directory: dist/kirby
-          destination-github-username: profitlich
+          destination-github-username: profitlich-ch
           destination-repository-name: template-kirbycms
           target-directory: .github/ISSUE_TEMPLATE
           target-branch: main
