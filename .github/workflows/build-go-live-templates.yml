@@ -13,56 +13,51 @@ jobs:
 
       - name: Extract sections and build templates
         run: |
-          mkdir -p dist
+          mkdir -p dist/craft dist/kirby
 
-          # Section "Allgemein" extrahieren (von ## Allgemein bis zur nächsten ##)
           sed -n '/^## Allgemein/,/^## /{ /^## Craft/d; /^## Kirby/d; p }' \
             docs/unternehmen/starter-kits/go-live.md > dist/shared.md
 
-          # Craft: GitHub Frontmatter + Allgemein + Craft-Section
-          cat << 'EOF' > dist/go-live-craft.md
+          cat << 'EOF' > dist/craft/go-live.md
           ---
           name: Go Live Checklist
           about: Aufgaben vor dem Launch
           labels: go-live
           ---
           EOF
-          cat dist/shared.md >> dist/go-live-craft.md
+          cat dist/shared.md >> dist/craft/go-live.md
           sed -n '/^## Craft CMS/,/^## /{ /^## Kirby/d; p }' \
-            docs/unternehmen/starter-kits/go-live.md >> dist/go-live-craft.md
+            docs/unternehmen/starter-kits/go-live.md >> dist/craft/go-live.md
 
-          # Kirby: gleich, aber mit Kirby-Section
-          cat << 'EOF' > dist/go-live-kirby.md
+          cat << 'EOF' > dist/kirby/go-live.md
           ---
           name: Go Live Checklist
           about: Aufgaben vor dem Launch
           labels: go-live
           ---
           EOF
-          cat dist/shared.md >> dist/go-live-kirby.md
+          cat dist/shared.md >> dist/kirby/go-live.md
           sed -n '/^## Kirby CMS/,$ p' \
-            docs/unternehmen/starter-kits/go-live.md >> dist/go-live-kirby.md
+            docs/unternehmen/starter-kits/go-live.md >> dist/kirby/go-live.md
 
       - name: Push to Craft repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.GO_LIVE_ISSUE_TEMPLATES }}
         with:
-          source-directory: dist
+          source-directory: dist/craft
           destination-github-username: mprofitlich
           destination-repository-name: template-craftcms
           target-directory: .github/ISSUE_TEMPLATE
           target-branch: main
-          rename-file: go-live-craft.md=go-live.md
 
       - name: Push to Kirby repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.GO_LIVE_ISSUE_TEMPLATES }}
         with:
-          source-directory: dist
+          source-directory: dist/kirby
           destination-github-username: mprofitlich
           destination-repository-name: template-kirbycms
           target-directory: .github/ISSUE_TEMPLATE
           target-branch: main
-          rename-file: go-live-kirby.md=go-live.md
