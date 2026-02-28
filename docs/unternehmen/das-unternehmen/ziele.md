@@ -12,11 +12,11 @@ Für Projekte gibt es Ablaufpläne und Checklisten: Übergabe von Gestalter, Üb
 
 Wir dokumentieren den Umsetzungsplan in einer gemeinsamen Sprache, und wir erfassen Änderungen am Plan. Dafür evaluieren wir Methoden/Sprachen/Techniken/Werkzeuge für die Dokumentation.
 
+Symphony CMS Projekte sind auf Vite und das Toolkit umgestellt.
+
 ### Marketing
 
 Die Website ist mit weiteren Projekten und Themen gefüllt, die die Interdisziplinarität belegen.
-
-Symphony CMS Kunden einen Vorschlag und Offerte erhalten, auf Craft oder Kirby umzustellen. Wir akquirieren dadurch und wir lassen Altlasten hinter uns.
 
 Akquise bei Grafikbüros ist durchgeführt und als regelmässige Aufgabe etabliert.
 
@@ -44,7 +44,7 @@ Wir setzen Standards in der Herangehensweise an Projekte. Wir ermöglichen unser
 
 #### Erreichte Ziele
 
-- Devtools in npm Modul ausgelagert, dass von beiden CMS Templates genutzt wird (Craft und Kirby).  
+- CMS-übergreifende Funktionen in npm Modul Toolkit ausgelagert (Toolbar, Sass und JS Funktionen).  
 - Verwendung von TS auf komplexe beschränkt, Template/Toolkit auf JS umgestellt.
 
 ### 2025
