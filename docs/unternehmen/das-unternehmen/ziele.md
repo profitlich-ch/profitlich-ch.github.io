@@ -45,7 +45,6 @@ Wir setzen Standards in der Herangehensweise an Projekte. Wir ermöglichen unser
 #### Erreichte Ziele
 
 - CMS-übergreifende Funktionen in npm Modul Toolkit ausgelagert (Toolbar, Sass und JS Funktionen).  
-- Verwendung von TS auf komplexe beschränkt, Template/Toolkit auf JS umgestellt.
 
 ### 2025
 
