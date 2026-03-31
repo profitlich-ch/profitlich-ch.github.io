@@ -4,8 +4,8 @@ layout: home
 
 features:
   - title: Finanzbuchhaltung
-    details: Buchungen, Ablage, Vorgehen
-    link: /unterstuetzung/finanzbuchhaltung/vorgehen
+    details: Prinzipien, Buchungen, Ablage
+    link: /unterstuetzung/finanzbuchhaltung/grundsaetze
   - title: EDV
     details: Arbeitsplätze, Hardware, Backup
     link: /unterstuetzung/edv/arbeitsplaetze
