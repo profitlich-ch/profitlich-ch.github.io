@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 ---
 
 # Go Live Checkliste
@@ -9,7 +9,7 @@ Die untenstehenden Aufgaben werden per Github Action als Issue Templates in die 
 :::
 
 ::: danger
-Die Überschriften müssen unverändert bleiben, sowohl im Wortlaut als in der Reihenfolge.
+Der Name dieser Datei und die Überschriften müssen unverändert bleiben, sowohl im Wortlaut als in der Reihenfolge.
 :::
 
 ## Allgemein
