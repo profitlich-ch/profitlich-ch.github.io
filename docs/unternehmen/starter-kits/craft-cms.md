@@ -92,7 +92,7 @@ Die automatische Ausführung der Craft Queue ist in der config deaktiviert. Stat
 #### Craft Queue
 Häufigkeit `*****`
 ```
-/usr/bin/bash /home/ANMELDENAME/public_html/ORDNERNAME/cronjobs/craft-queue.sh
+/usr/bin/bash /home/SERVERNAME/public_html/ORDNERNAME/cronjobs/craft-queue.sh
 ```
 
 #### Bei Verwendung von Blitz
