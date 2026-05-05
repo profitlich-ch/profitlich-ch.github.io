@@ -96,7 +96,7 @@ Ordner `Bookmarks` löschen
 Rechts Maustaste auf den Ordner `duck` › Dienste › Neues Terminal-Tab beim Ordner. Dort den folgenden Befehl eingeben, wobei `\[macUsername\]` gegen den Mac Benutzernamen (Ordnername in Library) und `\[googleUsername\]` gegen den Google Benutzernamen (gleich Mailadresse) auszutauschen ist.
 
 ```console
-ln -s ~/[macUsername]/Library/CloudStorage/GoogleDrive-[googleUsername]@profitlich.ch/Geteilte\ Ablagen/Profitlich/D\ Unterstützung/D3 Infrastruktur/03\ EDV/Software/Cyberduck/Bookmarks
+ln -s ~/Library/CloudStorage/GoogleDrive-[googleUsername]@profitlich.ch/Geteilte\ Ablagen/Profitlich/D\ Unterstützung/D3\ Infrastruktur/03\ EDV/Software/Cyberduck/Bookmarks
 ```
 
 So entsteht ein symbolischer Link, der auf den Ordner im Google Drive veweist. Jeder Bookmark erscheint auf jedem Computer bei jedem Mitarbeiter.
