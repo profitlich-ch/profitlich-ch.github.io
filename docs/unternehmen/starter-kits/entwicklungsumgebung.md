@@ -33,6 +33,39 @@ Registriere Dich bei [ngrok](https://ngrok.com/)
 
 Füge einen Token für ngrok hinzu `ngrok config add-authtoken <token>`
 
+### Claude Konfiguration
+
+In `~/.claude/settings.json` werden globale Permissions für gängige read-only Bash-Befehle hinterlegt, damit Claude Code diese ohne Rückfrage ausführen darf. Datei mit folgendem Inhalt anlegen:
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(tree:*)",
+      "Bash(file:*)",
+      "Bash(stat:*)",
+      "Bash(du:*)",
+      "Bash(pwd)",
+      "Bash(which:*)",
+      "Bash(echo:*)"
+    ],
+    "additionalDirectories": [
+      "~/Profitlich/F Lokal"
+    ]
+  }
+}
+```
+
+`additionalDirectories` gibt Claude Code Lese- und Schreibzugriff auf den gesamten Projekt-Ordner `~/Profitlich/F Lokal`, sodass auch projektübergreifend gearbeitet werden kann.
+
 ## Github mit SSH verwenden
 
 Wir clonen und pullen Projekte per SSH von unserer Bash aus. Eine SSH-Agent-Weiterleitung ermöglicht, auch auf der Remote-Bash (Hosting-Server) Git Befehle auszuführen. Den Key dafür stellt 1Password zur Verfügung. Folge zur Einrichtung der Anleitung von Github: https://developer.1password.com/docs/ssh/
