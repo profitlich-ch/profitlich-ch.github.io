@@ -105,3 +105,7 @@ In `~/.claude/settings.json` werden globale Permissions für gängige read-only 
 ## Github mit SSH verwenden
 
 Wir clonen und pullen Projekte per SSH von unserer Bash aus. Eine SSH-Agent-Weiterleitung ermöglicht, auch auf der Remote-Bash (Hosting-Server) Git Befehle auszuführen. Den Key dafür stellt 1Password zur Verfügung. Folge zur Einrichtung der [Anleitung von 1Password](https://developer.1password.com/docs/ssh/)
+
+## Node Module lokal ändern
+
+Zum Testen von Änderungen kannst Du Moduel direkt in node_modules im Projekt ändern. Damit Sie gelesen werden (und nicht die gecachte Version) führe statt `ddev npm run dev` den Befehl `ddev npm run dev:vite -- --force` aus.
