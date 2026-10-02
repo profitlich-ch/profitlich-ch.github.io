@@ -95,11 +95,7 @@ Häufigkeit `*****`
 /usr/bin/bash /home/ANMELDENAME/public_html/ORDNERNAME/cronjobs/craft-queue.sh
 ```
 
-#### Bei Verwendung von Blitz
-Häufigkeit `*5***`
-```
-/usr/bin/bash /home/ANMELDENAME/public_html/ORDNERNAME/cronjobs/blitz-cache-home-listing.sh
-```
+#### Blitz
 Häufigkeit `5****`
 ```
 /usr/bin/bash /home/ANMELDENAME/public_html/ORDNERNAME/cronjobs/blitz-cache-expired.sh
