@@ -33,7 +33,9 @@ Zum Beispiel sind Bilder nicht einzeln eingebunden, sondern über ein Utility.
 
 ## Aufgaben im Quelltext kennzeichnen
 
-Aufgaben im Quelltext im Kommentar mit `TODO` beginnen. Mit installierter ‹Better Comments› Erweiterung werden solche Kommentare schwarz hinterlegt. Es gibt noch weitere [Schlüsselwörter](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments).
+Aufgaben im Quelltext im Kommentar mit `TODO` beginnen. Auf einem Branch ist das als Arbeitsmarkierung frei; **auf `main` braucht jedes `TODO` eine Issue-Nummer**, etwa `// TODO(#42): Fehlermeldung übersetzen` – sonst fühlt sich niemand zuständig, und die Aufgabe taucht in keiner Planung auf. Mehr dazu unter [Git Vorgehen](./git-vorgehen.md#aufgaben-im-code).
+
+Mit installierter ‹Better Comments› Erweiterung werden solche Kommentare schwarz hinterlegt; ‹Todo Tree› listet alle TODOs eines Projekts. Es gibt noch weitere [Schlüsselwörter](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments).
 
 ## Nutze die Browserkonsole für Meldungen
 

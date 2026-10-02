@@ -23,10 +23,10 @@ M@{ shape: process, label: "Aufgabenerledigung" }
 N@{ shape: decision, label: "Ist es ein Draft oder ein Issue?" }
 O1@{ shape: process, label: "Draft zu Issue konvertieren" }
 P@{ shape: process, label: "Sich selbst als Assignee zuweisen" }
-Q@{ shape: decision, label: "Arbeit alleine oder im Team?" }
-R1@{ shape: process, label: "Branch erstellen" }
-R2@{ shape: process, label: "im main Branch arbeiten" }
-S1@{ shape: process, label: "Pull request erstellen" }
+Q@{ shape: decision, label: "Branch nötig? (siehe Git Vorgehen)" }
+R1@{ shape: process, label: "Branch mit Snapshot erstellen" }
+R2@{ shape: process, label: "direkt im main Branch arbeiten" }
+S1@{ shape: process, label: "lokal mergen, Branch und Snapshot löschen" }
 T@{ shape: stadium, label: "Neuer Code ist im main" }
 
 
@@ -42,8 +42,8 @@ N-- Draft --> O1
 N-- Issue --> P
 O1 --> P
 P --> Q
-Q-- im Team --> R1
-Q-- alleine --> R2
+Q-- ja --> R1
+Q-- nein --> R2
 R1 --> S1
 S1 --> T
 R2 --> T
