@@ -12,16 +12,18 @@ https://github.com/profitlich-ch/template-craftcms/
 
 1. Github repository auf Basis der Vorlage anlegen, mit Name `domain.tld`
 2. Git repository in VS Code clonen
-3. `colima start`
-4. `ddev start`
-5. `ddev npm install`
-6. `ddev ssh`
-7. `composer install --no-interaction`
-8. 'mysql db < dump.sql`
-9. `exit`
-10. `ddev launch`, `/redaktion` im Browser anhängen
-11. Site language üblicherweise de-CH
-12. Admin login `xxx-admin` mit xxx = Kundenkürzel
+3. In `.ddev/config.yaml` bei `name:` den Projektnamen setzen, etwa `domain-tld`
+4. In 1Password ein eigenes Environment für das Projekt anlegen (Werte nach `.env.example.dev`) und seine ID im `pre-start`-Hook in `.ddev/config.yaml` eintragen, anstelle der ID der Vorlage. Mit der ID der Vorlage bricht `ddev start` in einer Kopie ab.
+5. `colima start`
+6. `ddev start`
+7. `ddev npm install`
+8. `ddev ssh`
+9. `composer install --no-interaction`
+10. `mysql db < dump.sql`
+11. `exit`
+12. `ddev launch`, `/redaktion` im Browser anhängen
+13. Site language üblicherweise de-CH
+14. Admin login `xxx-admin` mit xxx = Kundenkürzel
 
 ## Dateipfade
 
