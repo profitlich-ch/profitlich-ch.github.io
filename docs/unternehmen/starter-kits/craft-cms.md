@@ -13,7 +13,7 @@ https://github.com/profitlich-ch/template-craftcms/
 1. Github repository auf Basis der Vorlage anlegen, mit Name `domain.tld`
 2. Git repository in VS Code clonen
 3. In `.ddev/config.yaml` bei `name:` den Projektnamen setzen, etwa `domain-tld`
-4. In 1Password ein eigenes Environment für das Projekt anlegen (Werte nach `.env.example.dev`) und seine ID im `pre-start`-Hook in `.ddev/config.yaml` eintragen, anstelle der ID der Vorlage. Mit der ID der Vorlage bricht `ddev start` in einer Kopie ab.
+4. In 1Password ein eigenes Environment für das Projekt anlegen (Werte nach `.env.example`) und seine ID im `pre-start`-Hook in `.ddev/config.yaml` eintragen, anstelle der ID der Vorlage. Mit der ID der Vorlage bricht `ddev start` in einer Kopie ab.
 5. `colima start`
 6. `ddev start`
 7. `ddev npm install`
@@ -82,11 +82,15 @@ Soll die Mail nur versendet werden, wenn der enry neu angelegt wird, braucht es 
 
 ## Staging/Production
 
-### Bei Verwendung der GraphL API
+### Dotenv
 
-Auf dem staging/production System ist die Adresse der API eine andere. Daher braucht es eine eigene Dotenv `.env.production`. Diese liegt auf dem Entwicklungssystem und wird automatisch von Vite für den build benutzt.
+Die Dotenv braucht auf dem Server andere Werte für die Datenbankverbindung und für alle URLs. Die `.env.example` im template repository nennt bei jedem Schlüssel, was dort anders lautet.
 
-Die Dotenv braucht andere Werte für die Datenbankverbindung und für alle URLs. Siehe `.env.example.dev` und `.env.example.staging-production` im template repository.
+### Sonderfall: Zugangsdaten im JavaScript
+
+Projekte mit Vue.js kompilieren Zugangsdaten in das JavaScript, etwa einen Craft-User oder ein GraphQL-Token. Der Build läuft auf dem Entwicklungssystem und liest dort die lokale Dotenv – das Ergebnis enthielte also die Werte von dev.
+
+Eine eigene Dotenv für den Build braucht es nur, wenn sich diese Werte zwischen dev, staging und production unterscheiden. Sie heisst nach dem Modus des Builds, `.env.production` oder `.env.staging`, liegt auf dem Entwicklungssystem und wird von Vite beim Build automatisch gelesen. Sind die Werte überall gleich, genügt die eine Dotenv.
 
 ### Cronjobs einrichten
 Die automatische Ausführung der Craft Queue ist in der config deaktiviert. Statdessen braucht es Cronjonbs im Hosting:
