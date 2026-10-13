@@ -1,8 +1,11 @@
 ---
 order: 2
+aside: false
 ---
 
 # Kontenplan
+
+<TabellenFilter platzhalter="Konto, Nummer oder Steuerkürzel suchen …">
 
 | Gruppen                                                    |                               | Steuerkürzel | Währung | Typ          |
 |------------------------------------------------------------|-------------------------------|--------------|---------|--------------|
@@ -144,3 +147,5 @@ order: 2
 | #### Erfolgsrechnung                                       |                               |              |         | Gruppe +     |
 | 9000                                                       | Jahresgewinn/-verlust         |              |         | Konto +      |
 | ### Verlust                                                |                               |              |         | Erfolg +     |
+
+</TabellenFilter>

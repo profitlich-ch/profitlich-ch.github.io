@@ -3,6 +3,7 @@ import { h, nextTick, watchEffect, watch } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import TabellenFilter from './components/TabellenFilter.vue'
 
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { createMermaidRenderer } from "vitepress-mermaid-renderer";
@@ -39,6 +40,7 @@ export default {
     // enhanceApp({ app, router, siteData }) {
     enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
+        ctx.app.component('TabellenFilter', TabellenFilter);
     },
     setup() {
         const { frontmatter } = toRefs(useData());
