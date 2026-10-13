@@ -64,6 +64,31 @@ const vitePressSidebarOptions = [
     },
 ]
 
+/**
+ * Markdown-it-Plugin: Gliederungsebenen in Tabellen. Beginnt die erste Zelle
+ * einer Zeile mit `## ` bis `#### `, entfallen die Rauten und die Zeile
+ * bekommt die Klasse `ebene-2` bis `ebene-4`.
+ */
+function tabellenEbenen(md) {
+    // Überschriften sind Block-Elemente und in Tabellenzellen nicht erlaubt;
+    // Markdown gibt die Rauten dort als Text aus. Vor der Inline-Phase, damit
+    // sie gar nicht erst zu Text-Tokens werden.
+    md.core.ruler.after('block', 'tabellen-ebenen', (state) => {
+        const tokens = state.tokens
+
+        for (let i = 0; i < tokens.length - 2; i++) {
+            if (tokens[i].type !== 'tr_open' || tokens[i + 1].type !== 'td_open') continue
+
+            const zelle = tokens[i + 2]
+            const treffer = zelle.content.match(/^(#{2,4})\s+/)
+            if (!treffer) continue
+
+            zelle.content = zelle.content.slice(treffer[0].length)
+            tokens[i].attrJoin('class', `ebene-${treffer[1].length}`)
+        }
+    })
+}
+
 export default defineConfig(
   withSidebar(
     {
@@ -71,6 +96,7 @@ export default defineConfig(
       markdown: {
         config: (md) => {
           md.use(taskLists)
+          md.use(tabellenEbenen)
         }
       }
     },

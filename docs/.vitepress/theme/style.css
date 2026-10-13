@@ -138,6 +138,28 @@
 }
 
 /**
+ * Tabellen: Gliederungsebenen
+ *
+ * Die Klassen setzt das Markdown-it-Plugin `tabellenEbenen` in config.mts.
+ * -------------------------------------------------------------------------- */
+
+.vp-doc tr.ebene-2 td:first-child {
+  padding-top: 28px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.vp-doc tr.ebene-3 td:first-child {
+  padding-top: 18px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.vp-doc tr.ebene-4 td:first-child {
+  font-weight: 600;
+}
+
+/**
  * Component: Algolia
  * -------------------------------------------------------------------------- */
 
